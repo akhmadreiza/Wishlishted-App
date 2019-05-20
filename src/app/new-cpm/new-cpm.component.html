@@ -1,0 +1,21 @@
+<p>
+  {{message}} ibab testing doang
+</p>
+
+<div *ngIf="message == 'halo ghes!'; then opt1 else opt2">
+
+</div>
+
+<ng-template #opt1>
+  <div>
+      Bulan:
+      <select>
+        <option *ngFor="let x of arrayOfMonth">{{x}}</option>
+      </select>
+  </div>  
+</ng-template>
+<ng-template #opt2>
+  <div>
+    hello
+  </div>
+</ng-template>
