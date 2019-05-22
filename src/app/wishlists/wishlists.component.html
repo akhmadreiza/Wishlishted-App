@@ -1,0 +1,21 @@
+<div class="container pt-3">
+  <h1>Welcome, {{userName}}.</h1>
+</div>
+
+<div class="app-form">
+    <div id="wishListContainer">
+      <div class="container pt-3">
+          <h5>Your Wishlists:</h5>
+        </div>
+        <div class="container pt-2 pb-2">
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action" *ngFor="let wishList of wishlistList">
+              {{wishList.name}}
+            </a>
+          </div>
+        </div>
+        <div class="container pt-2">
+          <a (click)="onLogOut()" routerLink="">LogOut</a>
+        </div>
+    </div>
+</div>

@@ -10,6 +10,7 @@ export class RegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("localStorage Token: " + localStorage.getItem('accessToken'));
   }
 
 }

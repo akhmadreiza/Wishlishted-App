@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { NewCpmComponent } from './new-cpm/new-cpm.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { WishlistsComponent } from './wishlists/wishlists.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewCpmComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    WishlistsComponent
   ],
   imports: [
     BrowserModule,
